@@ -25,7 +25,7 @@ Environment variables are fully configurable with an updated example file provid
 ## Running the project locally
 - Copy the .example.env -> .env
 - pnpm run pg:up to start the postgres server
-- Run pnpm payload migrate:fresh to seed the database
+- Run pnpm run seed to seed the database
 - Choose your fighter
 - sudo nano /etc/hosts
   - sudo vim /etc/hosts
