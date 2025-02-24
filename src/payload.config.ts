@@ -25,6 +25,16 @@ import { getUserTenantIDs } from "./collections/Tenants/utilities/getUserTenantI
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 
+const buildPostgresUrl = () => {
+  const user = process.env.DATABASE_POSTGRES_USER || process.env.DATABASE_PGUSER;
+  const password = process.env.DATABASE_POSTGRES_PASSWORD || process.env.DATABASE_PGPASSWORD;
+  const host = process.env.DATABASE_POSTGRES_HOST || process.env.DATABASE_PGHOST;
+  const database = process.env.DATABASE_POSTGRES_DATABASE || process.env.DATABASE_PGDATABASE;
+  console.log(user, password, host, database);
+
+  return `postgresql://${process.env.DATABASE_POSTGRES_USER}:${process.env.DATABASE_POSTGRES_PASSWORD}@${process.env.DATABASE_POSTGRES_HOST}:/${process.env.DATABASE_POSTGRES_DATABASE}`;
+};
+
 export default buildConfig({
   admin: {
     components: {
@@ -73,9 +83,7 @@ export default buildConfig({
             port: 5432,
           },
         })
-      : vercelPostgresAdapter({
-          connectionString: process.env.DATABASE_DATABASE_URL,
-        }),
+      : vercelPostgresAdapter(),
   // database-adapter-config-end
   collections: [Pages, Posts, Media, Categories, Users, Tenants],
   cors: [getServerSideURL()].filter(Boolean),
