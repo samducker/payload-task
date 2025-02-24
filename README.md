@@ -15,7 +15,8 @@ This repo demonstrates migrating Payload CMS's template from MongoDB to Postgres
 - Created Docker Compose file for running Postgres locally
 - Switched from mongooseAdapter to Drizzle Postgres adapter
 - Installed and configured the multi-tenancy plugin
-- Discovered and fixed undocumented errors in the seed file syntax using Drizzle Studio
+- Discovered and fixed undocumented errors in the seed file syntax using Drizzle Studio (if you want to try it use pnpm run drizzle:studio whilst postgres is running)
+  - I have to use the payload cli to generate the schema for setting this up also. 
 - Implemented domain name functionality, focusing on local setup first
 - Set up remote deployment on Vercel
 
