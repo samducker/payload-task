@@ -1,3 +1,5 @@
 .env
 node_modules
 .next
+**/.DS_Store
+.DS_Store
