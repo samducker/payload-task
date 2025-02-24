@@ -59,3 +59,8 @@ I'll create a clear table of credentials that would be useful in a README:
 | Tenant 3 | bronze | bronze.test |
 
 These credentials are created by default when running the seed script. You can use them to test different permission levels and tenant access scenarios.
+
+## Future to-do's
+For the purposes of this activity, I want to complete the project within a timely fashion. 
+- I would add some end to end tests with Playwright or some unit and integration tests with Vitest.
+- I would add some additional access controls on a per tenant basis, and produce unique content for each tenant
