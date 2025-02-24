@@ -1,6 +1,9 @@
 # Project Overview
 This repo demonstrates migrating Payload CMS's template from MongoDB to Postgres and implementing multi-tenancy features. The project was completed as a technical assessment to showcase taking the templates/website from the official Payload CMS repository, migrating it to Postgres, and adapting the template to utilize multi-tenancy based on their documentation examples.
 
+## Explainer video
+[Explainer video](https://files.duckhou.se/task-payload-cms.mp4)
+
 ## Key Changes
 - Created Docker Compose setup for local Postgres development with host file configuration
 - Migrated from npm to pnpm, updated and pinned all dependencies
@@ -64,3 +67,4 @@ These credentials are created by default when running the seed script. You can u
 For the purposes of this activity, I want to complete the project within a timely fashion. 
 - I would add some end to end tests with Playwright or some unit and integration tests with Vitest.
 - I would add some additional access controls on a per tenant basis, and produce unique content for each tenant
+- There was a bunch of bugs and eslint warnings in files non-related to the task/not written by me that I left as is. Purely fixing the ones that were needed to get the build working.

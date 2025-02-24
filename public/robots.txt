@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Disallow: /admin/*
+
+# Host
+Host: http://localhost:4321
+
+# Sitemaps
+Sitemap: http://localhost:4321/sitemap.xml
+Sitemap: http://localhost:4321/pages-sitemap.xml
+Sitemap: http://localhost:4321/posts-sitemap.xml
