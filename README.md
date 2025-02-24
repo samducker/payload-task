@@ -68,3 +68,5 @@ For the purposes of this activity, I want to complete the project within a timel
 - I would add some end to end tests with Playwright or some unit and integration tests with Vitest.
 - I would add some additional access controls on a per tenant basis, and produce unique content for each tenant
 - There was a bunch of bugs and eslint warnings in files non-related to the task/not written by me that I left as is. Purely fixing the ones that were needed to get the build working.
+- Theres a small error with the visual preview of the seeded pages, however creating new pages works fine. The types were not properly defined here unforunately, so I would need to investigate further to fix that.
+- Subdomains on vercel are only available when connecting a custom domain or for main/preview deployments, so the concept of per tenant domains is shown in the local explainer. 
