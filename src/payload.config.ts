@@ -79,11 +79,15 @@ export default buildConfig({
     process.env.IS_LOCAL && process.env.IS_LOCAL === "true"
       ? postgresAdapter({
           pool: {
-            connectionString: process.env.DATABASE_DATABASE_URL,
+            connectionString: process.env.DATABASE_URI,
             port: 5432,
           },
         })
-      : vercelPostgresAdapter(),
+      : vercelPostgresAdapter({
+          pool: {
+            connectionString: process.env.DATABASE_URI,
+          },
+        }),
   // database-adapter-config-end
   collections: [Pages, Posts, Media, Categories, Users, Tenants],
   cors: [getServerSideURL()].filter(Boolean),
