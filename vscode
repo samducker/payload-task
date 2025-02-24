@@ -1,0 +1,5 @@
+<script>start("/Users/sam/Documents/GitHub/houseofduck/payload/templates/website/.vscode/");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("extensions.json","extensions.json",0,78,"78 B",1740395805,"24/02/2025, 11:16:45");</script>
+<script>addRow("launch.json","launch.json",0,758,"758 B",1740395805,"24/02/2025, 11:16:45");</script>
+<script>addRow("settings.json","settings.json",0,1124,"1.1 kB",1740395805,"24/02/2025, 11:16:45");</script>
